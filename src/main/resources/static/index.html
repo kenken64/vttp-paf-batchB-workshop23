@@ -33,12 +33,12 @@
     </h1>
     <br>
     <form action="#">
-        <div>
-            <label for="orderNo">Order Id:</label>
-            <input type="text" id="orderId" name="orderId" placeholder="Enter order id">
+        <div class="mb-3 mt-3">
+            <label for="orderNo" class="form-label">Order Id:</label>
+            <input type="text" id="orderId" name="orderId" class="form-control" placeholder="Enter order id">
         </div>
 
-        <button type="button" onClick="searchOrderDetails()">Search</button>
+        <button type="button" class="btn btn-primary" onClick="searchOrderDetails()">Search</button>
 
         <hr>
         <div id="json"></div>
