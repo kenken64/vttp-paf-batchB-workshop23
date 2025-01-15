@@ -19,7 +19,7 @@
             url: "/api/order-details/" + orderId,
             data: {},
             contentType: 'application/json',
-            cache: false,
+            cache: true,
             success: function(data){
                 console.log(data);
                 $("#json").html(JSON.stringify(data));
@@ -38,7 +38,7 @@
             <input type="text" id="orderId" name="orderId" placeholder="Enter order id">
         </div>
 
-        <button type="submit" onClick="searchOrderDetails()">Search</button>
+        <button type="button" onClick="searchOrderDetails()">Search</button>
 
         <hr>
         <div id="json"></div>

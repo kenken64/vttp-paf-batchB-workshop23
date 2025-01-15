@@ -21,6 +21,7 @@ public class OrderDetailsController {
     @GetMapping(path="/{orderId}")
     public ResponseEntity<String> getOrderDetailsWithDiscount(
             @PathVariable int orderId) {
+        System.out.println("order id" + orderId);
         OrderDetails ord = orderDetailsService
                     .getOrderDetailsWithDiscount(orderId);
         return ResponseEntity
